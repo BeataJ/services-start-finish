@@ -14,8 +14,11 @@ export class AccountComponent {
 
   constructor(private loggingService: LoggingService, private accountService: AccountService) {}
 
-  onSetTo(status: string) {
-   this.accountService.updateAccount(this.id,status )
-    this.loggingService.logStatusChange(status);
-  }
+  
+    onSetTo(status: string) {
+      this.accountService.updateAccount(this.id, status)
+      this.loggingService.logStatusChange(status);
+    }
+  
+  
 }
